@@ -1,0 +1,15 @@
+
+					HOW TO IMPORT DATABASE
+
+
+1.install Oracle database (Download link in video description)
+2. create a new database account
+3. give account username: crypto and password: crypto
+4. run "import database.bat" file
+5. You are done.
+
+
+
+note:  see tutorial "How to install oracle database" to create a new database account.
+
+Tutorial Link: https://www.youtube.com/watch?v=pdroObOHOYY

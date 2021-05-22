@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-configuration PUBLIC "" "hibernate-configuration-3.0.dtd"> 
+<hibernate-configuration>
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="connection.username">crypto</property>
+		<property name="connection.password">crypto</property>
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<mapping resource="user.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

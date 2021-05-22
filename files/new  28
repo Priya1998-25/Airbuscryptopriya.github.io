@@ -1,0 +1,103 @@
+Sanjana Tamang, 9:36 PM
+:D
+Rajeev, 9:37 PM
+import java.sql.*;
+import java.util.*;
+class Test
+{
+	public static void main(String[] args) throws Exception
+	{
+		Scanner input =new Scanner(System.in);
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rajeev","root","root");
+		
+		String sql="select * from mytable";
+		PreparedStatement pst = conn.prepareStatement(sql);
+
+		DatabaseMetaData dbmd=conn.getMetaData();  
+System.out.println("Driver Name:"+dbmd.getDriverName());
+System.out.println("Version:"+dbmd.getDriverVersion());
+System.out.println("User Name:"+dbmd.getUserName());
+System.out.println("Product Name:"+dbmd.getDatabaseProductName());
+System.out.println("Product Version:"+dbmd.getDatabaseProductVersion());
+
+
+conn.close();
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+public String getDriverName()throws SQLException: 
+	it returns the name of the JDBC driver.
+
+
+public String getDriverVersion()throws SQLException: 
+	it returns the version number of the JDBC driver.
+
+
+public String getUserName()throws SQLException: 
+	it returns the username of the database.
+
+public String getDatabaseProductName()throws SQLException: 
+	it returns the product name of the database.
+
+
+public String getDatabaseProductVersion()throws SQLException: 
+	it returns the product version of the database.
+
+How to get Object:
+----------------------
+DatabaseMetaData dbmd=con.getMetaData();  
+
+
+9:44 PM
+try kry ga
+//employee
+import java.sql.*;
+import java.util.*;
+class 
+
+{
+	public static void main(String[] args) throws Exception
+	{
+		Scanner input =new Scanner(System.in);
+		while(true)
+		{
+System.out.println("\t------------------------");
+System.out.println("\tEmployee Informarion");
+System.out.println("\t------------------------");
+
+System.out.println("1. Add Record");
+System.out.println("2. Update Record");
+System.out.println("3. Delete Record");
+System.out.println("4. Find Record");
+System.out.println("5. Find All Record");
+System.out.println("6. Exit");
+System.out.print("Enter the Choice:");
+Integer c = input.nextInt();
+		
+		System.out.print("Do u want to continue:");
+		String choice = input.next();
+		if(choice.equalsIgnoreCase("no"))
+		{
+			System.out.println("Welcome Back");
+			break;
+		}
+		
+		}
+		
+		
+		
+	}
+}

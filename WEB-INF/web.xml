@@ -1,0 +1,10 @@
+<web-app>
+  <display-name>Hotspot</display-name>
+  <welcome-file-list>
+   <welcome-file>index.jsp</welcome-file>
+   </welcome-file-list>
+
+<listener>
+	<listener-class>ConnectionDao</listener-class>
+</listener>
+</web-app>

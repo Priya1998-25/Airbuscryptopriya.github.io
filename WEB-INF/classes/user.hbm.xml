@@ -1,0 +1,11 @@
+<!DOCTYPE hibernate-mapping PUBLIC "" "hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.User" table="user_info">
+<id name="email" column="email"></id>
+		<property name="fname" column="fname"></property>
+		<property name="lname" column="lname"></property>
+		<property name="gender" column="gender"></property>
+		
+		<property name="password" column="password"></property>
+	</class>
+</hibernate-mapping>

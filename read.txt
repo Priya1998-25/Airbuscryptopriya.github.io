@@ -1,0 +1,1 @@
+paste both the dtd files hibernate-configuration-3.0.dtd and hibernate-mapping-3.0.dtd in tomcat folder.

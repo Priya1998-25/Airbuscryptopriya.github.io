@@ -1,0 +1,1 @@
+imp crypto/crypto touser=crypto fromuser=crypto file=crypto.dmp
